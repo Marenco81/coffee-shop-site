@@ -75,12 +75,22 @@ section{
 .home{
     display: flex;
     justify-content: flex-end;
-    text-align: right;
+    /* text-align: right; */
     align-items: center;
     gap: 8rem;
     background: url(/assets/background-3.jpg) no-repeat;
     background-position: initial;
     background-size: cover;
+}
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-content_info{
+    text-align: right;
+    align-items: center;
+    padding-left: 8rem;
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -218,4 +228,56 @@ section{
 .menu-info a i{
     font-size: 3rem;
     color: var(--main-color);
+}
+.reviews{
+    background-color: var(--bg-color);
+}
+.reviews h2{
+    margin-bottom: 10rem;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 8rem;
+    gap: 2rem;
+}
+.reviews-container .reviews-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.reviews-container .reviews-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    background-color: whitesmoke;
+    color: black;
+}
+.reviews-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.reviews-box h3{
+    font-size: 2.6rem;
+}
+.reviews-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-slider-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    width: 50px;
 }
